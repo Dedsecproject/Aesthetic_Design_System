@@ -1,0 +1,5 @@
+{
+  "unit": "4px",
+  "scale": { "0": "0px", "1": "4px", "2": "8px", "3": "12px", "4": "16px", "5": "20px", "6": "24px", "8": "32px", "10": "40px", "12": "48px", "16": "64px", "20": "80px" },
+  "layout": { "pageGutterSmall": "16px", "pageGutterMedium": "24px", "pageGutterLarge": "32px", "contentMaxWidth": "1200px", "readingMaxWidth": "720px", "controlHeight": "40px", "controlHeightSmall": "32px", "controlHeightLarge": "48px", "touchTargetMinimum": "44px" }
+}

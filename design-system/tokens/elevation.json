@@ -1,0 +1,8 @@
+{
+  "none": "none",
+  "subtle": "0 1px 2px rgba(0,0,0,0.06)",
+  "raised": "0 4px 12px rgba(0,0,0,0.10)",
+  "overlay": "0 12px 32px rgba(0,0,0,0.16)",
+  "dark": { "subtle": "0 1px 2px rgba(0,0,0,0.28)", "raised": "0 4px 12px rgba(0,0,0,0.36)", "overlay": "0 12px 32px rgba(0,0,0,0.48)" },
+  "usage": { "default": "none", "card": "subtle", "popover": "raised", "dialog": "overlay" }
+}

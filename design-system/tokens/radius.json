@@ -1,0 +1,9 @@
+{
+  "none": "0px",
+  "sm": "4px",
+  "md": "6px",
+  "lg": "8px",
+  "xl": "12px",
+  "pill": "999px",
+  "usage": { "inputs": "{md}", "buttons": "{md}", "cards": "{lg}", "dialogs": "{xl}", "badges": "{pill}" }
+}
