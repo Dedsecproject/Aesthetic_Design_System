@@ -2,3 +2,5 @@
 referenced-chatgpt-conversation-this-is-an
 agent/.cache/
 agent/runs/
+agent/__pycache__/
+*.py[cod]
