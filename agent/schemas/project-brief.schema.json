@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Aesthetic Design System Project Brief",
+  "type": "object",
+  "required": ["project", "users", "screens", "constraints"],
+  "properties": {
+    "project": { "type": "object", "required": ["name", "type", "primaryJob"], "properties": { "name": { "type": "string" }, "type": { "type": "string" }, "primaryJob": { "type": "string" }, "accent": { "type": "string" }, "platforms": { "type": "array", "items": { "type": "string" } } } },
+    "users": { "type": "array", "items": { "type": "object", "required": ["role", "needs"], "properties": { "role": { "type": "string" }, "needs": { "type": "array", "items": { "type": "string" } } } } },
+    "screens": { "type": "array", "items": { "type": "object", "required": ["name", "purpose", "primaryAction"], "properties": { "name": { "type": "string" }, "purpose": { "type": "string" }, "primaryAction": { "type": "string" } } } },
+    "constraints": { "type": "object", "required": ["accessibilityTarget", "supportedWidths"], "properties": { "accessibilityTarget": { "type": "string" }, "supportedWidths": { "type": "array", "items": { "type": "string" } }, "framework": { "type": "string" }, "existingLibrary": { "type": "string" } } }
+  }
+}

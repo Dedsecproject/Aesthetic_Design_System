@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Implementation-ready design specification",
+  "type": "object",
+  "required": ["status", "assumptions", "screens", "components", "tokenMappings", "accessibility", "openQuestions"],
+  "properties": {
+    "status": { "type": "string", "enum": ["complete", "needs-input"] },
+    "assumptions": { "type": "array", "items": { "type": "string" } },
+    "screens": { "type": "array", "items": { "type": "object", "required": ["name", "purpose", "layout", "states", "responsive"], "properties": { "name": { "type": "string" }, "purpose": { "type": "string" }, "layout": { "type": "object" }, "states": { "type": "array" }, "responsive": { "type": "object" } } } },
+    "components": { "type": "array", "items": { "type": "object" } },
+    "tokenMappings": { "type": "array", "items": { "type": "object" } },
+    "accessibility": { "type": "array", "items": { "type": "string" } },
+    "openQuestions": { "type": "array", "items": { "type": "string" } }
+  }
+}

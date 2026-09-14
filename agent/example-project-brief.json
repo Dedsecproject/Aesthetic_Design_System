@@ -1,0 +1,21 @@
+{
+  "project": {
+    "name": "Operations workspace",
+    "type": "Internal web application",
+    "primaryJob": "Help operations leads monitor work and resolve exceptions",
+    "accent": "#2563EB",
+    "platforms": ["responsive web"]
+  },
+  "users": [
+    { "role": "Operations lead", "needs": ["scan current status", "find exceptions", "assign follow-up work"] }
+  ],
+  "screens": [
+    { "name": "Overview", "purpose": "Summarize current operational health", "primaryAction": "Review exceptions" }
+  ],
+  "constraints": {
+    "accessibilityTarget": "WCAG 2.2 AA",
+    "supportedWidths": ["320px", "768px", "1440px"],
+    "framework": "framework-agnostic",
+    "existingLibrary": "Use documented system components"
+  }
+}

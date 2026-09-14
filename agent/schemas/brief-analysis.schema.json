@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brief Analysis",
+  "type": "object",
+  "required": ["status", "assumptions", "missingInformation"],
+  "properties": { "status": { "type": "string", "enum": ["complete", "needs-input"] }, "assumptions": { "type": "array", "items": { "type": "string" } }, "missingInformation": { "type": "array", "items": { "type": "string" } }, "recommendedNextStep": { "type": "string" } }
+}

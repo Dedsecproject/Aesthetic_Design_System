@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Design system audit report",
+  "type": "object",
+  "required": ["status", "findings", "passedChecks", "priorities", "openQuestions", "verdict"],
+  "properties": {
+    "status": { "type": "string", "enum": ["complete", "needs-input"] },
+    "findings": { "type": "array", "items": { "type": "object", "required": ["severity", "location", "finding", "whyItMatters", "recommendedChange"], "properties": { "severity": { "type": "string", "enum": ["high", "medium", "low"] }, "location": { "type": "string" }, "finding": { "type": "string" }, "whyItMatters": { "type": "string" }, "recommendedChange": { "type": "string" } } } },
+    "passedChecks": { "type": "array", "items": { "type": "string" } },
+    "priorities": { "type": "array", "items": { "type": "string" } },
+    "openQuestions": { "type": "array", "items": { "type": "string" } },
+    "verdict": { "type": "string", "enum": ["ready", "ready after fixes", "not ready"] }
+  }
+}
